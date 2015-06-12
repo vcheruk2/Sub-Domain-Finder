@@ -1,7 +1,10 @@
 # This code needs to be compiled using Admin privileges.
-# Upon successful execution of this code it prints the exisiting sub-domains for a given Top-Level domain.
+# Upon successful execution of this code it prints the existing sub-domains for a given Top-Level domain.
 
 import os
+import datetime
+
+tm = datetime.datetime.now().time()
 
 print ""
 
@@ -57,3 +60,6 @@ print ""
 print "There are "+ctr+" Valid Sub-Level domains for "+hostname+" and they are"
 print lst
 print ""
+
+print "Program started at "+tm
+print "Program finished at "+datetime.datetime.now().time()
