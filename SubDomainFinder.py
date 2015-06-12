@@ -57,9 +57,9 @@ else:
 	print "Top level Hostname is down, Exiting the Program"
 
 print ""
-print "There are "+ctr+" Valid Sub-Level domains for "+hostname+" and they are"
+print "There are "+str(ctr)+" Valid Sub-Level domains for "+hostname+" and they are"
 print lst
 print ""
 
-print "Program started at "+tm
-print "Program finished at "+datetime.datetime.now().time()
+print "Program started at "+str(tm)
+print "Program finished at "+str(datetime.datetime.now().time())
