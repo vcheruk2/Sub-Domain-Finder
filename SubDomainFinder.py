@@ -47,7 +47,7 @@ if response == 0:
 					for l in xrange(97,123):
 						test = os.system("ping -c 1 "+chr(i)+chr(j)+chr(k)+chr(l)+"."+hostname)
 						if test == 0:
-							lst.append(chr(i)+chr(j)+chr(k)+chr(l)"."+hostname)
+							lst.append(chr(i)+chr(j)+chr(k)+chr(l)+"."+hostname)
 							ctr += 1
 		x = False
 else:
