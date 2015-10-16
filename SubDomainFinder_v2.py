@@ -1,3 +1,5 @@
+
+
 import os
 import subprocess
 import commands
@@ -9,12 +11,14 @@ temp = []
 add = []
 list=[]
 
+# Get the input from the user (Website)
 data = raw_input("Enter a website here ")
 
 x = os.popen("nslookup "+data).read()
 
 fo = open("some.txt","rw+")
 fo.write(x)
+
 
 fo = open("some.txt","r")
 for line in fo:
@@ -45,9 +49,7 @@ foo.write(y)
 foo= open("out.txt","r")
 for l in foo:
 	for part in l.split():
-            if "www.ncsu.edu" in part:
+            if data in part:
                 print "Yes"
-    
-
 
 open("some.txt",'w').close()
